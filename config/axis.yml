@@ -1,0 +1,105 @@
+:create_coves_settings:
+  :path: /axis-cgi/param.cgi
+  :query: action=add&group=Coves&template=coves_settings
+:create_event_server:
+  :path: /axis-cgi/param.cgi
+  :query: action=add&group=EventServers.HTTP&template=coves_http_config
+:create_event_type:
+  :path: /axis-cgi/param.cgi
+  :query: action=add&group=Event&template=coves_event
+:create_master_server:
+  :path: /axis-cgi/param.cgi
+  :query: action=add&group=Coves&template=coves_settings
+:create_motion_window:
+  :path: /axis-cgi/param.cgi
+  :query: action=add&group=Motion&template=coves_motion
+:create_save_action:
+  :path: /axis-cgi/param.cgi
+  :query: action=add&template=coves_recordaction
+:create_send_action:
+  :path: /axis-cgi/param.cgi
+  :query: action=add&template=coves_httpaction
+:create_stream_profile:
+  :path: /axis-cgi/param.cgi
+  :query: action=add&group=StreamProfile&template=coves_streamprofile
+:create_viewer_user:
+  :path: /axis-cgi/pwdgrp.cgi
+  :query: action=add&user=viewer&grp=users&sgrp=viewer&comment=Viewer
+  
+:datetime:
+  :path: /axis-cgi/date.cgi
+  :query: action=get
+  
+:delete_parameter:
+  :path: /axis-cgi/param.cgi
+  :query: action=remove
+  
+:grab:
+  :path: /axis-cgi/jpg/image.cgi
+  :query:
+
+:get_coves_settings:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=Coves.C0
+:get_event_actions:
+  :path: /axis-cgi/param.cgi
+  :query: action=list
+:get_event_servers:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=EventServers.HTTP
+:get_event_types:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=Event
+:get_live:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=Event.E2.enabled
+:get_model:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=Brand.ProdNbr
+:get_description:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=Brand.ProdFullName
+:get_motion_windows:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=Motion
+:get_parameter:
+  :path: /axis-cgi/param.cgi
+  :query: action=list
+:get_serial_number:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=Properties.System.SerialNumber
+:get_stream_profiles:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=StreamProfile
+:get_system_properties:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=Properties.System
+:get_users:
+  :path: /axis-cgi/pwdgrp.cgi
+  :query: action=get
+  
+:has_anonymous_viewer:
+  :path: /axis-cgi/param.cgi
+  :query: action=list&group=Network.RTSP.ProtViewer
+
+:restart:
+  :path: /axis-cgi/restart.cgi
+  :query:
+
+:set_authenticate_over_http:
+  :path: /axis-cgi/param.cgi
+  :query: action=update&Network.RTSP.AuthenticateOverHTTP=yes
+:set_simultaneous_viewers_to_1:
+  :path: /axis-cgi/param.cgi
+  :query: action=update&Image.MaxViewers=1
+:set_viewer_user_password:
+  :path: /axis-cgi/pwdgrp.cgi
+  :query: action=update&user=viewer
+  
+:unset_anonymous_viewer:
+  :path: /axis-cgi/param.cgi
+  :query: action=update&Network.RTSP.ProtViewer=password
+
+:update_parameter:
+  :path: /axis-cgi/param.cgi
+  :query: action=update
