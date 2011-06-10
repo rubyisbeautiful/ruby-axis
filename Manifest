@@ -3,7 +3,6 @@ Rakefile
 config/axis.yml
 lib/axis_api.rb
 lib/axis_api/camera_api.rb
-lib/axis_api/coves_mkv.conf.erb
 lib/axis_api/network_api.rb
 lib/axis_api/pipe_api.rb
 lib/axis_api/recording_api.rb

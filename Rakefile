@@ -4,7 +4,7 @@ require 'echoe'
 
 Echoe.new('ruby-axis', '0.0.1') do |p|
 	p.description    = "A gem that provides a ruby API to Axis cameras"
-  p.url            = "http://rubyisbeautiful.com"
+  p.url            = "http://github.com/rubyisbeautiful/ruby-axis"
 	p.author         = "Bryan Taylor"
 	p.summary        = 'features: uses VAPIX, telnet, scripting'
 	p.email          = "btaylor39 @nospam@ csc.com"
